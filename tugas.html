@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Jquery</title>
+    <script src="js/jquery-3.6.4.js"></script>
+</head>
+<body>
+    
+    <script>
+       $( document ).ready(function() {
+
+        //pembuatan jquery dengan pemanggilan selector tag
+            $("input").click(function(){
+                alert("Terimakasih sudah memilih");
+            });
+            //pembuatan jquery dengan pemanggilan id
+            $("#panggil_id").css("background-color", "yellow",);
+            //menggunakan effect
+            $( "p" ).hide(900);
+            $( "p" ).slideDown(300);
+            //pembuatan image jika diklik akan hide
+            $(".club1").click(function(){
+                $(".club1").hide(700);
+                
+            })
+            $(".club2").click(function(){
+                $(".club2").hide(700);
+            })
+            $(".club3").click(function(){
+                $(".club3").hide(700);
+            })
+            
+
+       });
+    </script>
+    <h3 id="panggil_id">Silahkan Pilih Club Bola Favorit anda</h3>
+    <img class="club1" src="img/club1.png" alt="image" height="250" width="250">
+    <img class="club2" src="img/club2.jpg" alt="image" height="250" width="250">
+    <img class="club3" src="img/club3.png" alt="image" height="250" width="250"><br>
+    <p>Jika kamu klik gambar maka gambar akan hilang</p>
+    <input type="submit" value="Terimakasih" />
+    
+</body>
+</html>
